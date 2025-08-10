@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Explore Crypto - FinBlog</title>
+
+  <!-- Favicon -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #f4f4f9, #e0e0ff);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header/Nav */
+    .header {
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px 0;
+    }
+
+    .header .logo h1 {
+      color: white;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .navmenu a {
+      color: #fff;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    .navmenu a:hover,
+    .navmenu .active {
+      color: #ffe600;
+    }
+
+    .header-social-links a {
+      color: white;
+      margin-left: 10px;
+      font-size: 18px;
+    }
+
+    /* Crypto Section */
+    .crypto-section {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 12px;
+      margin: 50px auto;
+      max-width: 1100px;
+    }
+
+    .crypto-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .crypto-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .crypto-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .crypto-card h5 {
+      padding: 15px 20px 0;
+      font-weight: 700;
+    }
+
+    .crypto-card p {
+      padding: 10px 20px 20px;
+      font-size: 15px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1e3c72;
+      color: #ffffffcc;
+      padding: 40px 0;
+    }
+
+    .footer h4 {
+      color: #ffe600;
+      font-weight: 600;
+    }
+
+    .footer a {
+      color: #ffffffcc;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ffe600;
+    }
+
+    .footer .social-links a {
+      color: #fff;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .footer .copyright {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <h1>FinBlog</h1>
+      </div>
+      <nav class="navmenu d-flex align-items-center">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="single-post.html">Trending</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-social-links d-none d-md-flex">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <div class="crypto-section">
+    <h1>Explore Cryptocurrency Opportunities</h1>
+    <p>Understand, invest, and grow your knowledge in the world of digital finance with FinBlog.</p>
+  </div>
+
+  <!-- Crypto Cards -->
+  <div class="container">
+    <div class="row g-4">
+      <!-- Repeat this block with new content/images -->
+      <div class="col-md-6 col-lg-3">
+        <div class="crypto-card">
+          <img src="assets/img/business/fnn.webp" alt="Crypto Basics">
+          <h5>What is Cryptocurrency?</h5>
+          <p>Learn the foundation of crypto, blockchain, and how digital currencies work globally.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="crypto-card">
+          <img src="assets/img/business/fnn2.webp" alt="Investment Potential">
+          <h5>High Return Potential</h5>
+          <p>Explore how early investments in crypto can lead to exponential financial growth.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="crypto-card">
+          <img src="D:/FinBlog/ZenBlog-1.0.0/business/centalised.jpg" alt="DeFi">
+          <h5>Decentralized Finance</h5>
+          <p>Understand how DeFi systems work without banks and empower users over assets.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="crypto-card">
+          <img src="D:/FinBlog/ZenBlog-1.0.0/business/global.jpg" alt="Global Access">
+          <h5>Global Accessibility</h5>
+          <p>Send or receive funds instantly anywhere in the world using crypto networks.</p>
+        </div>
+      </div>
+
+      <!-- Extra 4 cards -->
+      <div class="col-md-6 col-lg-3">
+        <div class="crypto-card">
+          <img src="D:/FinBlog/ZenBlog-1.0.0/business/download.jpg" alt="Volatility">
+          <h5>Market Volatility</h5>
+          <p>Understand market swings and learn to manage crypto investment risks.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="crypto-card">
+          <img src="D:/FinBlog/ZenBlog-1.0.0/business/security.jpg" alt="Security">
+          <h5>Security & Wallets</h5>
+          <p>Secure your crypto with wallets and keys. Learn how to protect your investments.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="crypto-card">
+          <img src="D:/FinBlog/ZenBlog-1.0.0/business/diversity.jpg" alt="Diversification">
+          <h5>Diversify Portfolio</h5>
+          <p>Add digital assets to your portfolio and balance your risk and returns.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="crypto-card">
+          <img src="D:/FinBlog/ZenBlog-1.0.0/business/banking future.jpg" alt="Future of Finance">
+          <h5>Future of Finance</h5>
+          <p>Discover how blockchain is transforming traditional finance systems worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <h4>FinBlog</h4>
+          <p>Your trusted source for insights into the evolving world of cryptocurrency.</p>
+          <div class="social-links d-flex mt-3">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3">
+          <h4>Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center copyright mt-4">
+        <p>© 2025 <strong>FinBlog</strong>. All Rights Reserved.</p>
+        <p>Designed by Suvarna Gaddam</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

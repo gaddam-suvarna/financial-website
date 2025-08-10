@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Index - FinBlog</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .header {
+      background-color: #000 !important;
+      padding: 15px 0;
+    }
+
+    .sitename {
+      color: white;
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin: 0;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .sitename:hover {
+      color: #ff9800;
+      transform: scale(1.1);
+    }
+
+    /*.navmenu ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navmenu ul li a {
+      color: white !important;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+
+    .navmenu ul li a:hover,
+    .navmenu ul li a.active {
+      color: #ff9800 !important;
+    }
+
+    .header-social-links a {
+      color: white;
+      margin-left: 15px;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .header-social-links a:hover {
+      color: #ff9800;
+    }
+
+    .trending-section {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+
+    .trending-section .section-title h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .trending-section .section-title p {
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .trending-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .trending-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .trending-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .trending-card .card-body {
+      padding: 15px;
+      flex-grow: 1;
+    }
+
+    .trending-card h5 {
+      font-size: 1.1rem;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .trending-card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .trending-card .read-more {
+      color: #ff9800;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .trending-card .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .mobile-nav-toggle {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .navmenu ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .mobile-nav-toggle {
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }*/
+    
+.navmenu ul {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 5px !important; 
+}
+
+/* Style the menu links */
+.navmenu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+/* Adjust for small screens */
+@media (max-width: 768px) {
+  .navmenu ul {
+      justify-content: center;
+  }
+
+  .navmenu ul li a {
+      font-size: 14px;
+      padding: 6px 8px;
+  }
+}
+
+/* Hide hamburger icon since we always show menu */
+.mobile-nav-toggle {
+  display: none !important;
+}
+#navmenu ul {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 5px !important; /* Reduce gap */
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+    .footer {
+  /*color: var(--default-color);
+  background-color: var(--background-color);*/
+  font-size: 14px;
+  position: relative;
+  background-color: #000 !important;
+  color: #f5f5f5;
+}
+
+.footer .footer-top {
+  padding-top: 50px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .footer-about .logo {
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.footer .footer-about .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.footer .footer-about .logo span {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer .footer-about p {
+  font-size: 14px;
+  font-family: var(--heading-font);
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  padding-right: 2px;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.footer .credits a {
+  color: var(--default-color);
+}
+
+  </style>
+</head>
+
+<body class="index-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">FinBlog</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="trending.html" class="active">Trending</a></li>
+          <li><a href="category.html">Category</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trending Section -->
+  <section id="trending" class="trending-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>🔥 Trending Posts</h2>
+        <p>Check out what’s hot in the finance and crypto world right now.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="trending-card">
+            <img src="D:/FinBlog/ZenBlog-1.0.0/business/bit.jpg" alt="Bitcoin" />
+            <div class="card-body">
+              <h5>Bitcoin Breaks $70k Mark</h5>
+              <p>Bitcoin surges past $70,000 as market optimism grows.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="trending-card">
+            <img src="D:/FinBlog/ZenBlog-1.0.0/business/sustainable.jpg" alt="Sustainable Finance" />
+            <div class="card-body">
+              <h5>Sustainable Finance in 2025</h5>
+              <p>Discover how ESG investments are reshaping portfolios.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="trending-card">
+            <img src="D:/FinBlog/ZenBlog-1.0.0/business/crypto.jpg" alt="Crypto Tax" />
+            <div class="card-body">
+              <h5>Crypto Tax Rules You Should Know</h5>
+              <p>Important tax updates for crypto holders in India.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="trending-card">
+            <img src="D:/FinBlog/ZenBlog-1.0.0/business/block.jpg" alt="Blockchain" />
+            <div class="card-body">
+              <h5>Top 5 Blockchain Projects to Watch</h5>
+              <p>Explore the most innovative blockchain startups of 2025.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="trending-card">
+            <img src="D:/FinBlog/ZenBlog-1.0.0/business/web 3.jpg" alt="Web3" />
+            <div class="card-body">
+              <h5>Web3: Hype or Real Revolution?</h5>
+              <p>Analyzing the future of decentralized web technologies.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="trending-card">
+            <img src="D:/FinBlog/ZenBlog-1.0.0/business/global mar.jpg"alt="Stock Market" />
+            <div class="card-body">
+              <h5>Global Market Predictions</h5>
+              <p>What analysts say about stocks in the upcoming quarter.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">FinBlog</span>
+          </a>
+          <!--<div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>--->
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <!--<div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>--->
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">FinBlog</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by Suvarna Gaddam
+      </div>
+    </div>
+
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
